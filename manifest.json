@@ -1,0 +1,20 @@
+{
+  "name": "ATC",
+  "description": "Asana task counter",
+  "manifest_version": 2,
+  "version": "1.0",
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://app.asana.com/0/*/board"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["activeTab"]
+}
