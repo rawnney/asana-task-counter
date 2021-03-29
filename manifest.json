@@ -12,8 +12,7 @@
       "matches": [
         "https://app.asana.com/0/*/board"
       ],
-      "js": ["content.js"],
-      "run_at": "document_end"
+      "js": ["content.js"]
     }
   ],
   "permissions": ["activeTab"]
